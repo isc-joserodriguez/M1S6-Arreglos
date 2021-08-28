@@ -65,6 +65,22 @@ function impares(numero) {
 
     return numero % 2 !== 0;
 }
-var numerosImpares=nums.filter(impares);
+var numerosImpares = nums.filter(impares);
 
 console.log(numerosImpares);
+
+//map
+var nombres = ['ramón', 'pedro', 'laura', 'maría']
+console.log(nombres);
+
+var nombresMayus = nombres.map(function (nombre, indice) {
+    if (nombre === 'maría') {
+        return nombre;
+    }
+    if (indice === 1) {
+        return indice;
+    }
+    return nombre.toUpperCase();
+})
+
+console.log(nombresMayus);
