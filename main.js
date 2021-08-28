@@ -84,3 +84,12 @@ var nombresMayus = nombres.map(function (nombre, indice) {
 })
 
 console.log(nombresMayus);
+
+//reduce
+
+var miNombre = ['José', 'Rodriguez'];
+var nombreConcatenado = miNombre.reduce(function (acumulador, elemento) {
+    return acumulador + ' ' + elemento;
+}, 'Nombre:');
+
+console.log(nombreConcatenado);
